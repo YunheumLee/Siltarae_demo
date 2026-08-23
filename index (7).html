@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>실타래 · 누워서도 쓰는 장갑 마우스</title>
+  <style>
+    :root { --navy:#0f2c5c; --navy2:#16346a; --muted:#a9bfe0; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+           background:var(--navy); color:#fff; line-height:1.6; -webkit-text-size-adjust:100%; }
+    .wrap { max-width:720px; margin:0 auto; padding:24px 20px 48px; }
+    header { border-bottom:1px solid rgba(255,255,255,0.12); padding-bottom:18px; margin-bottom:24px; }
+    .logo { height:34px; margin-bottom:12px; display:block; }
+    .eyebrow { font-size:12px; letter-spacing:1.5px; color:var(--muted); font-weight:700; }
+    h1 { font-size:23px; margin-top:8px; line-height:1.25; }
+    .tagline { font-size:14px; color:var(--muted); margin-top:8px; }
+    section { margin-bottom:26px; }
+    h2 { font-size:14px; letter-spacing:0.5px; color:var(--muted); font-weight:700; text-transform:uppercase; margin-bottom:14px; }
+    .clip { margin-bottom:20px; } .clip:last-child { margin-bottom:0; }
+    .clip .label { font-size:15px; font-weight:700; margin-bottom:8px; }
+    .clip .label span { color:var(--muted); font-weight:400; font-size:13px; }
+    .video-box { position:relative; width:100%; border-radius:12px; overflow:hidden; background:#000; box-shadow:0 6px 18px rgba(0,0,0,0.35); }
+    video { width:100%; display:block; background:#000; }
+    .links { display:flex; flex-direction:column; gap:10px; }
+    a.btn { display:flex; align-items:center; gap:12px; background:var(--navy2); color:#fff; text-decoration:none;
+            padding:14px 16px; border-radius:10px; font-size:15px; font-weight:600; border:1px solid rgba(255,255,255,0.10); }
+    a.btn:active { background:#1d3f7a; }
+    a.btn .ico { font-size:18px; width:24px; text-align:center; }
+    a.btn .sub { display:block; font-size:12px; font-weight:400; color:var(--muted); margin-top:2px; }
+    .specs { background:var(--navy2); border-radius:10px; padding:14px 18px; font-size:14px; border:1px solid rgba(255,255,255,0.10); }
+    .specs .row { display:flex; justify-content:space-between; padding:5px 0; border-bottom:1px dashed rgba(255,255,255,0.12); }
+    .specs .row:last-child { border-bottom:none; }
+    .specs .k { color:var(--muted); }
+    footer { text-align:center; color:var(--muted); font-size:12px; margin-top:30px; padding-top:18px; border-top:1px solid rgba(255,255,255,0.12); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <!-- 로고 없으면 이 줄 삭제 -->
+      <img class="logo" src="images/logo.png" alt="실타래" />
+      <div class="eyebrow">제7회 국립재활원 보조기기 해커톤 · 팀 실타래</div>
+      <h1>누워서도, 기대서도 쓰는<br />장갑형 웨어러블 마우스</h1>
+      <div class="tagline">거동이 불편한 사용자를 위한, 책상 없이 쓰는 입력장치</div>
+    </header>
+
+    <section>
+      <h2>데모 영상</h2>
+
+      <div class="clip">
+        <div class="label">1. 마우스 기본 동작 <span>커서 · 클릭 · 드래그</span></div>
+        <div class="video-box">
+          <video controls playsinline preload="metadata">
+            <source src="videos/mouse-demo.mp4" type="video/mp4" />
+            이 브라우저에서는 영상을 재생할 수 없습니다.
+          </video>
+        </div>
+      </div>
+
+      <div class="clip">
+        <div class="label">2. 게임 플레이 <span>실사용 속도로 조작</span></div>
+        <div class="video-box">
+          <video controls playsinline preload="metadata">
+            <source src="videos/game-demo.mp4" type="video/mp4" />
+            이 브라우저에서는 영상을 재생할 수 없습니다.
+          </video>
+        </div>
+      </div>
+
+      <div class="clip">
+        <div class="label">3. IoT 제어 <span>누운 채 조명 · 가전 제어</span></div>
+        <div class="video-box">
+          <video controls playsinline preload="metadata">
+            <source src="videos/iot-demo.mp4" type="video/mp4" />
+            이 브라우저에서는 영상을 재생할 수 없습니다.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>오픈소스 자료</h2>
+      <div class="links">
+        <a class="btn" href="#" target="_blank" rel="noopener">
+          <span class="ico">&#128187;</span>
+          <span>펌웨어 · 캘리브레이션 코드<span class="sub">GitHub 저장소</span></span>
+        </a>
+        <a class="btn" href="#" target="_blank" rel="noopener">
+          <span class="ico">&#128220;</span>
+          <span>부품 목록 (BOM)<span class="sub">시판 부품 · 단가</span></span>
+        </a>
+        <a class="btn" href="#" target="_blank" rel="noopener">
+          <span class="ico">&#128295;</span>
+          <span>제작 가이드 · PCB 도면<span class="sub">누구나 따라 만들 수 있게</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>구성 · 실물 사이즈</h2>
+      <div class="specs">
+        <div class="row"><span class="k">장갑 실측</span><span>○○ × ○○ mm</span></div>
+        <div class="row"><span class="k">손등 모듈</span><span>○○ × ○○ × ○ mm</span></div>
+        <div class="row"><span class="k">센서</span><span>파이버 strain ×2 · IMU(BMI270)</span></div>
+        <div class="row"><span class="k">제어 · 무선</span><span>Arduino Nano 33 BLE Rev2</span></div>
+        <div class="row"><span class="k">전원</span><span>Li-Po 3.7V 1200mAh</span></div>
+        <div class="row"><span class="k">피드백</span><span>코인 모터 진동</span></div>
+      </div>
+    </section>
+
+    <footer>
+      팀 실타래 · 이진규 · 이윤흠 · 양예찬<br />
+      Seoul National University · B-MIL
+    </footer>
+
+  </div>
+</body>
+</html>
